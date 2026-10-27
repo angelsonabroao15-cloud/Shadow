@@ -1,0 +1,126 @@
+.container{
+    display: flex;
+    background-color: #ffffff0d;
+    padding: 16px;
+    border-radius:24px ;
+    gap: 16px;
+    border: 1px solid #ffffff14;
+    width: 1000px;
+
+    .controls{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        padding: 16px;
+        border-radius: 12px;
+        border: 1px solid #ffffff14;
+
+        .control-group{
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+
+            label{
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            input[type="range"]{
+                width: 100%;
+                cursor: pointer;
+                accent-color: #184e77ff;
+                background: #1e759fff;
+                appearance: none;
+                border-radius: 8px;
+                height: 5px;
+            }
+
+            input[type="color"]{
+                width: 10%;
+                height: 30px;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+                border-radius: 8px;
+            }
+        }
+
+        .inline-group{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            input[type="checkbox"] {
+                width: 18px;
+                height: 18px;
+                accent-color: #1e759fff;
+                cursor: pointer;
+                }
+        }
+    }
+
+    .result{
+        width:55%;
+        background: linear-gradient(145deg, #e6e6e6, #eceff3);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 14px;
+        height: 350px ;
+
+        .output-box{
+            background: linear-gradient(135deg, #ffffff, #f1f3f6);
+            width: 200px;
+            height: 200px;
+            border-radius: 18px;
+        }
+
+        .code-output{
+            background: #111111;
+            padding: 16px 20px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 390px;
+
+            .code-header{
+                display: flex;
+                justify-content: space-between;
+
+
+                p{
+                    font-size: 0.8rem;
+                    color: #cfcfcf;
+                }
+
+                button{
+                    background: transparent;
+                    color: #fff;
+                    display: flex;
+                    gap: 4px;
+                    align-items: center;
+                    cursor: pointer;
+                    border: none;
+                }
+            }
+
+            .code-line{
+                word-break: break-all;
+                color: #42d2e8;
+                font-family: monospace;
+
+                span{
+                    color: #ff59a0;
+                }
+            }
+
+        }
+    }
+}
+
+ 
